@@ -44,6 +44,24 @@ class VrPagesCategoriesTableSeeder extends Seeder
                 'deleted_at' => NULL,
                 'name' => 'apie_kategorija',
             ),
+            3 => 
+            array (
+                'count' => 4,
+                'id' => 'b58b7546-3d52-4124-a5ae-b699c8386962',
+                'created_at' => '2017-06-13 09:41:44',
+                'updated_at' => '2017-06-13 09:41:44',
+                'deleted_at' => NULL,
+                'name' => 'rezervacija_kategorija',
+            ),
+            4 => 
+            array (
+                'count' => 5,
+                'id' => 'f2f7b060-ce55-46bb-8baf-779fcacae01a',
+                'created_at' => '2017-06-18 16:31:57',
+                'updated_at' => '2017-06-18 16:31:57',
+                'deleted_at' => NULL,
+                'name' => 'remejai_kategorija',
+            ),
         ));
 
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');

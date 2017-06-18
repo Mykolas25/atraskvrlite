@@ -65,7 +65,56 @@ class VrPagesCategoriesTranslationsTableSeeder extends Seeder
                 'name' => 'About',
                 'slug' => 'about',
             ),
+            4 => 
+            array (
+                'count' => 5,
+                'id' => '00bb8c51-87ea-4537-81ab-07a4738ee0ef',
+                'created_at' => '2017-06-13 09:42:02',
+                'updated_at' => '2017-06-13 09:42:02',
+                'deleted_at' => NULL,
+                'categories_id' => 'b58b7546-3d52-4124-a5ae-b699c8386962',
+                'languages_id' => 'lt',
+                'name' => 'Rezervacija',
+                'slug' => 'rezervacija',
+            ),
+            5 => 
+            array (
+                'count' => 6,
+                'id' => 'da63430b-fcfa-4151-9b87-9ae76d3fce5e',
+                'created_at' => '2017-06-13 09:42:02',
+                'updated_at' => '2017-06-13 09:42:02',
+                'deleted_at' => NULL,
+                'categories_id' => 'b58b7546-3d52-4124-a5ae-b699c8386962',
+                'languages_id' => 'en',
+                'name' => 'Reservation',
+                'slug' => 'reservation',
+            ),
+            6 => 
+            array (
+                'count' => 7,
+                'id' => 'f49369c4-c3d3-464b-9d4a-7b6ac88a548c',
+                'created_at' => '2017-06-18 17:20:58',
+                'updated_at' => '2017-06-18 17:20:58',
+                'deleted_at' => NULL,
+                'categories_id' => 'f2f7b060-ce55-46bb-8baf-779fcacae01a',
+                'languages_id' => 'lt',
+                'name' => 'Remejai',
+                'slug' => 'remejai',
+            ),
+            7 => 
+            array (
+                'count' => 8,
+                'id' => '648ff04a-8273-45f6-a4ba-12c1a4780e57',
+                'created_at' => '2017-06-18 17:20:58',
+                'updated_at' => '2017-06-18 17:20:58',
+                'deleted_at' => NULL,
+                'categories_id' => 'f2f7b060-ce55-46bb-8baf-779fcacae01a',
+                'languages_id' => 'en',
+                'name' => 'Sponsors',
+                'slug' => 'sponsors',
+            ),
         ));
 
-        DB::statement('SET FOREIGN_KEY_CHECKS = 1');    }
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+    }
 }

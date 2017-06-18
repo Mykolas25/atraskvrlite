@@ -34,6 +34,9 @@ Route::group(['middleware' => 'auth'], function () {
 //        return view('welcome');
 //    });
 
+Route::get('auth/google', 'VRSocialAuthController@redirectToProvider')->name('login.google');
+Route::get('auth/google/callback','VRSocialAuthController@handleProviderCallback');
+
 
 //Admin
 
@@ -317,5 +320,3 @@ Auth::routes();
 
 //Route::get('/', ['middleware' => ['check-role-member'], 'as' => 'frontend.index', 'uses' => 'FrontEndController@index'])->name('home');
 
-Route::get('login/google', 'VRSocialAuthController@redirectToProvider')->name('login.google');
-Route::get('login/google/callback','VRSocialAuthController@handleProviderCallback');

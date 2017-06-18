@@ -18,7 +18,6 @@ class SocialAccountService
 {
     public function createOrGetUser(ProviderUser $providerUser)
     {
-
         $account = VRSocialAccountModel::whereOauth_provider('google')
             ->whereOauth_uid($providerUser->getId())
             ->first();

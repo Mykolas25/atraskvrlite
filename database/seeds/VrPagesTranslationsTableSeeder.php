@@ -129,8 +129,36 @@ class VrPagesTranslationsTableSeeder extends Seeder
                 'description_short' => 'translation value',
                 'slug' => 'about',
             ),
+            8 => 
+            array (
+                'count' => 11,
+                'id' => 'c5424f8b-9406-42c4-81da-b400c6476b0b',
+                'created_at' => '2017-06-18 18:07:42',
+                'updated_at' => '2017-06-18 18:07:42',
+                'deleted_at' => NULL,
+                'pages_id' => 'fb3656ab-2403-4fdd-8f0a-1d32b33a0453',
+                'languages_id' => 'lt',
+                'title' => 'Rėmėjai',
+                'description_long' => 'translation value',
+                'description_short' => 'translation value',
+                'slug' => 'remejai',
+            ),
+            9 => 
+            array (
+                'count' => 12,
+                'id' => 'ba2ec13c-bcb8-46f0-95b0-f42fb445f243',
+                'created_at' => '2017-06-18 18:07:42',
+                'updated_at' => '2017-06-18 18:07:42',
+                'deleted_at' => NULL,
+                'pages_id' => 'fb3656ab-2403-4fdd-8f0a-1d32b33a0453',
+                'languages_id' => 'en',
+                'title' => 'Sponsors',
+                'description_long' => 'translation value',
+                'description_short' => 'translation value',
+                'slug' => 'sponsors',
+            ),
         ));
+
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
-        
     }
 }

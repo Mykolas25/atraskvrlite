@@ -12,9 +12,11 @@ class VrPagesTableSeeder extends Seeder
      */
     public function run()
     {
+
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        DB::table('vr_pages')->delete();
-        DB::table('vr_pages')->insert(array (
+        \DB::table('vr_pages')->delete();
+        
+        \DB::table('vr_pages')->insert(array (
             0 => 
             array (
                 'count' => 1,
@@ -53,8 +55,8 @@ class VrPagesTableSeeder extends Seeder
                 'count' => 4,
                 'id' => '542e06f2-3f77-41ee-aba8-a68b1db6cc5d',
                 'created_at' => '2017-06-08 08:51:37',
-                'updated_at' => '2017-06-08 08:51:37',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-06-08 16:26:42',
+                'deleted_at' => '2017-06-08 16:26:42',
                 'name' => 'Apie',
                 'pages_categories_id' => '69efd427-6091-4f0e-adb3-d320d3e26aac',
                 'cover_image_id' => 'f5b0f3cd-23d6-4e19-8769-05a3503bef98',
@@ -68,6 +70,39 @@ class VrPagesTableSeeder extends Seeder
                 'deleted_at' => NULL,
                 'name' => 'Apie',
                 'pages_categories_id' => '69efd427-6091-4f0e-adb3-d320d3e26aac',
+                'cover_image_id' => NULL,
+            ),
+            5 => 
+            array (
+                'count' => 6,
+                'id' => '7435010d-9275-417b-9515-823c1e3f594c',
+                'created_at' => '2017-06-13 09:43:42',
+                'updated_at' => '2017-06-13 09:43:42',
+                'deleted_at' => NULL,
+                'name' => 'Rezervacija',
+                'pages_categories_id' => 'b58b7546-3d52-4124-a5ae-b699c8386962',
+                'cover_image_id' => 'fbb0e5fd-a2ab-47d4-afad-563e80759a6c',
+            ),
+            6 => 
+            array (
+                'count' => 7,
+                'id' => '12ecd123-5b8b-43dd-83d2-a87e3192254d',
+                'created_at' => '2017-06-18 13:40:39',
+                'updated_at' => '2017-06-18 18:00:01',
+                'deleted_at' => '2017-06-18 18:00:01',
+                'name' => 'TestPage',
+                'pages_categories_id' => 'vr_categories_id',
+                'cover_image_id' => 'b64eca6f-5e35-4615-a764-8fe239eb5fc0',
+            ),
+            7 => 
+            array (
+                'count' => 8,
+                'id' => 'fb3656ab-2403-4fdd-8f0a-1d32b33a0453',
+                'created_at' => '2017-06-18 18:02:13',
+                'updated_at' => '2017-06-18 18:02:13',
+                'deleted_at' => NULL,
+                'name' => 'Rėmėjai',
+                'pages_categories_id' => 'f2f7b060-ce55-46bb-8baf-779fcacae01a',
                 'cover_image_id' => NULL,
             ),
         ));
